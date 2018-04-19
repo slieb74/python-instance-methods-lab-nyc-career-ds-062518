@@ -9,7 +9,7 @@ In the last lesson, we talked about what are instance methods. In this lab, we a
 * Practice defining classes and instantiating instances of those classes
 * Practice deinfing instance methods and calling them
 
-## Defining Classes
+## Defining Classes and Instance Methods
 
 In this section, define two classes, `Driver`, `Passenger`. 
 
@@ -17,30 +17,28 @@ In the `Driver` class, define the instance method `greeting` that returns the st
 
 In the `Passenger` class, define the instance method `reply_greeting` that returns the string `"I am doing well! Thanks for picking me up today!"`. Then define the method `in_a_hurry`, which returns the string `"Punch it! They're on our tail!"`. 
 
-> **Note:** remember that our instance methods need to be defined with the `self` argument in order to be called on an instance of the class. 
+Again, we have both a driver.py and passenger.py file included in our directoy. Use these files to define your classes and instance methods.
+
+> **Note:** the next cell is loading an extension, `autoreload`, from IPython. This tool simply reimports our code right before we execute any python (i.e. run a cell with Python code). This ensures that any update we make in our other files, passenger.py & driver.py, will be reflected in the juypter notebook. Don't worry about autoreload for now, just run the cell once and forget about it. 
 
 
 ```python
-# define Driver class and instance methods here
-class Driver:
-    
-    def greeting(self): 
-        return "Hey, how are you?"
-    
-    def ask_for_destination(self): 
-        return "Where would you like to go today?"
+%load_ext autoreload
+%autoreload 2
+```
+
+    The autoreload extension is already loaded. To reload it, use:
+      %reload_ext autoreload
+
+
+
+```python
+from passenger import Passenger
 ```
 
 
 ```python
-# define Passenger class and instance methods here
-class Passenger:
-    
-    def reply_greeting(self): 
-        return "I am doing well! Thanks for picking me up today!"
-    
-    def in_a_hurry(self): 
-        return "Punch it! They're on our tail!"
+from driver import Driver
 ```
 
 ## Instantiate Instances and Practice Using Instance Methods
@@ -68,11 +66,17 @@ polite_greeting = daniel.greeting()
 print(polite_greeting)
 ```
 
+    Hey, how are you?
+
+
 
 ```python
 no_time_to_talk = niky.in_a_hurry()
 print(no_time_to_talk)
 ```
+
+    Punch it! They're on our tail!
+
 
 ## Summary
 In this lab, we practiced defining classes and instance methods. We then instantiated instances of our classes and used them to practice calling our instance methods. 
