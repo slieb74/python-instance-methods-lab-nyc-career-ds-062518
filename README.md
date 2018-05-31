@@ -7,7 +7,7 @@ In the last lesson, we talked about instance methods -- what are they and how to
 ## Objectives
 
 * Practice defining classes and instantiating instances of those classes
-* Practice deinfing instance methods and calling them
+* Practice defining instance methods and calling them
 
 ## Defining Classes and Instance Methods
 
@@ -17,11 +17,11 @@ In the `Driver` class, define the instance method `greeting` that returns the st
 
 In the `Passenger` class, define the instance method `reply_greeting` that returns the string `"I am doing well! Thanks for picking me up today!"`. Then define the method `in_a_hurry`, which returns the string `"Punch it! They're on our tail!"`. 
 
-Again, we have both a driver.py and passenger.py file included in our directoy. Use these files to define your classes and instance methods.
+Again, we have both a driver.py and passenger.py file included in our directory. Use these files to define your classes and instance methods.
     
-> **remember:** *as we learned in the previous lesson, we need to define our instance methods with at least one argument in order to call them on instance objects. Don't worry, we will explain this more in a later lesson.*
+> **Remember:** *as we learned in the previous lesson, we need to define our instance methods with at least one argument in order to call them on instance objects. Don't worry, we will explain this more in a later lesson.*
 
-> **Note:** the next cell is loading an extension, `autoreload`, from IPython. This tool simply reimports our code right before we execute any python (i.e. run a cell with Python code). This ensures that any update we make in our other files, passenger.py & driver.py, will be reflected in the juypter notebook. Don't worry about autoreload for now, just run the cell once and forget about it. 
+> **Note:** the next cell is loading an extension, `autoreload`, from IPython. This tool simply reimports our code right before we execute any python (i.e. run a cell with Python code). This ensures that any update we make in our other files, passenger.py and driver.py, will be reflected in the jupyter notebook. Don't worry about autoreload for now, just run the cell once and forget about it. 
 
 
 ```python
